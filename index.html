@@ -284,6 +284,64 @@ footer .footer-bottom{
 .reg-status{display:none;grid-column:1/-1;padding:12px 14px;border-radius:11px;background:#eef0d5;color:#4d5912;font-size:12px;font-weight:800;text-align:center}.reg-status.show{display:block}
 @media(max-width:620px){.modal{align-items:flex-start;padding:10px}.modal-card.registration-card{max-height:calc(100vh - 20px);border-radius:20px}.reg-head{padding:25px 20px 20px}.reg-head h3{font-size:25px}.reg-form{padding:20px}.reg-grid{grid-template-columns:1fr}.field.full,.choice-block,.reg-consent,.reg-submit,.reg-foot,.reg-status{grid-column:1}.choice-grid,.payment-grid{grid-template-columns:1fr}}
 
+
+.registration-success{
+  display:none;
+  padding:42px 38px 40px;
+  text-align:center;
+  max-width:680px;
+  margin:0 auto;
+}
+.registration-success.show{display:block}
+.success-icon{
+  width:58px;height:58px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;
+  background:rgba(197,159,78,.13);
+  border:1px solid rgba(197,159,78,.45);
+  color:#d7b66d;font-size:28px;font-weight:800;
+}
+.registration-success h3{
+  margin:8px 0 12px;
+  font-family:Manrope,sans-serif;
+  font-size:clamp(28px,4vw,40px);
+  line-height:1.1;
+}
+.registration-success p{
+  margin:0 auto;
+  max-width:570px;
+  color:#6b7480;
+  line-height:1.65;
+}
+.success-actions{
+  display:grid;
+  gap:12px;
+  margin:28px auto 18px;
+  max-width:470px;
+}
+.success-actions .btn{width:100%;justify-content:center;text-decoration:none}
+.btn-community{
+  background:#0f1a24;
+  color:#fff;
+  border:1px solid rgba(15,26,36,.18);
+  box-shadow:none;
+}
+.btn-community:hover{transform:translateY(-1px)}
+.success-note{
+  max-width:520px;
+  margin:18px auto 0;
+  padding:13px 15px;
+  border-radius:12px;
+  background:rgba(197,159,78,.08);
+  border:1px solid rgba(197,159,78,.22);
+  color:#5f6670;
+  font-size:13px;
+  line-height:1.5;
+}
+@media(max-width:640px){
+  .registration-success{padding:34px 20px 30px}
+}
+
 </style>
 </head>
 <body>
@@ -376,7 +434,7 @@ footer .footer-bottom{
   <div class="secure-note">Preencha seus dados e siga para o pagamento seguro</div>
 </div>
 </div></section>
-<section class="faq"><div class="container"><div class="eyebrow">Dúvidas frequentes</div><h2>Antes de decidir.</h2><div class="faq-list"><details><summary>Preciso entender de programação?</summary><p>Não. O workshop é voltado à aplicação prática da Inteligência Artificial na rotina de RH e não exige conhecimento de programação.</p></details><details><summary>O workshop é presencial?</summary><p>Sim. O encontro será presencial no Hotel Estação 101, em Itajaí/SC, das 08h30 às 12h.</p></details><details><summary>O que está incluso no valor?</summary><p>Participação no workshop, café da manhã, apostila digital e certificado de participação.</p></details><details><summary>É só para quem já usa IA?</summary><p>Não. O conteúdo foi estruturado para profissionais que querem entender possibilidades e aplicações reais, incluindo quem ainda está começando.</p></details><details><summary>Como faço a inscrição?</summary><p>Clique em “Garantir minha vaga”, preencha seus dados de inscrição no próprio site e, em seguida, você será direcionado ao pagamento seguro pelo Mercado Pago.</p></details></div></div></section>
+<section class="faq"><div class="container"><div class="eyebrow">Dúvidas frequentes</div><h2>Antes de decidir.</h2><div class="faq-list"><details><summary>Preciso entender de programação?</summary><p>Não. O workshop é voltado à aplicação prática da Inteligência Artificial na rotina de RH e não exige conhecimento de programação.</p></details><details><summary>O workshop é presencial?</summary><p>Sim. O encontro será presencial no Hotel Estação 101, em Itajaí/SC, das 08h30 às 12h.</p></details><details><summary>O que está incluso no valor?</summary><p>Participação no workshop, café da manhã, apostila digital e certificado de participação.</p></details><details><summary>É só para quem já usa IA?</summary><p>Não. O conteúdo foi estruturado para profissionais que querem entender possibilidades e aplicações reais, incluindo quem ainda está começando.</p></details><details><summary>Como faço a inscrição?</summary><p>Clique em “Garantir minha vaga”, preencha seus dados no próprio site e finalize a inscrição. Depois, você verá os botões para concluir o pagamento seguro pelo Mercado Pago e entrar na comunidade exclusiva do WhatsApp.</p></details></div></div></section>
 <section class="final"><div class="container"><h2>O RH não precisa trabalhar mais.<br>Precisa trabalhar com mais inteligência.</h2><p>Conheça aplicações reais de IA e comece a transformar tarefas, processos e decisões em uma rotina mais estratégica.</p><button class="btn btn-dark checkout">Quero participar do Workshop</button></div></section>
 
 <footer><div class="container footer-bottom"><span>© 2026 DHOBRU · Pessoas, Negócios & Inteligência Artificial</span></div>
@@ -387,7 +445,7 @@ footer .footer-bottom{
       <button type="button" class="reg-close" id="closeModal" aria-label="Fechar">×</button>
       <div class="eyebrow">Inscrição · Workshop IA no RH</div>
       <h3 id="regTitle">Garanta sua vaga</h3>
-      <p>Preencha seus dados para registrar sua inscrição. Ao finalizar, você será direcionado ao pagamento seguro pelo Mercado Pago.</p>
+      <p>Preencha seus dados para registrar sua inscrição. Depois, você poderá concluir o pagamento e entrar na comunidade exclusiva do workshop.</p>
     </div>
     <form class="reg-form" id="registrationForm" action="https://script.google.com/macros/s/AKfycbxEs4fvNJvv7c9whTLjFoAX91q427kBFVB4BDRtImW7iSk6eRKKjqzeXfTgqSxIFPleAQ/exec" method="POST" target="registrationSink">
       <div class="reg-grid">
@@ -419,11 +477,26 @@ footer .footer-bottom{
         </div>
 
         <label class="reg-consent"><input type="checkbox" required><span>Confirmo que os dados acima estão corretos e concordo em receber informações relacionadas ao Workshop IA no RH.</span></label>
-        <div class="reg-status" id="regStatus">Inscrição registrada. Abrindo o pagamento…</div>
-        <button class="btn btn-gold reg-submit" id="regSubmit" type="submit">Continuar para o pagamento →</button>
+        <div class="reg-status" id="regStatus">Registrando sua inscrição…</div>
+        <button class="btn btn-gold reg-submit" id="regSubmit" type="submit">Finalizar inscrição →</button>
         <div class="reg-foot">Seus dados serão utilizados para gestão da inscrição e comunicação relacionada ao workshop.</div>
       </div>
     </form>
+
+    <div class="registration-success" id="registrationSuccess" aria-live="polite">
+      <div class="success-icon">✓</div>
+      <div class="eyebrow">Inscrição recebida</div>
+      <h3>Obrigada por sua inscrição!</h3>
+      <p>Seus dados foram registrados com sucesso. Agora, conclua o pagamento para confirmar sua vaga e entre na nossa comunidade exclusiva do WhatsApp.</p>
+
+      <div class="success-actions">
+        <a class="btn btn-gold" href="https://mpago.la/1mrDcHG">Concluir pagamento →</a>
+        <a class="btn btn-community" href="https://chat.whatsapp.com/KEPipyU6cfSLWPf0HbPxur?s=cl&p=a&mlu=0" target="_blank" rel="noopener noreferrer">Entrar na comunidade do WhatsApp</a>
+      </div>
+
+      <div class="success-note"><strong>Importante:</strong> sua vaga é confirmada após a conclusão do pagamento.</div>
+    </div>
+
     <iframe name="registrationSink" id="registrationSink" title="Envio da inscrição" style="display:none"></iframe>
   </div>
 </div>
@@ -434,8 +507,14 @@ const modal = document.getElementById("modal");
 const registrationForm = document.getElementById("registrationForm");
 const regSubmit = document.getElementById("regSubmit");
 const regStatus = document.getElementById("regStatus");
+const registrationSuccess = document.getElementById("registrationSuccess");
 
 function openRegistration(){
+  registrationForm.style.display = "";
+  registrationSuccess.classList.remove("show");
+  regSubmit.disabled = false;
+  regSubmit.textContent = "Finalizar inscrição →";
+  regStatus.classList.remove("show");
   modal.classList.add("show");
   document.body.style.overflow = "hidden";
   setTimeout(()=>document.getElementById("nome")?.focus(),120);
@@ -462,8 +541,14 @@ registrationForm.addEventListener("submit",e=>{
   if(!registrationForm.checkValidity()) return;
   regSubmit.disabled = true;
   regSubmit.textContent = "Registrando inscrição…";
+  regStatus.textContent = "Registrando sua inscrição…";
   regStatus.classList.add("show");
-  setTimeout(()=>{ window.location.href = CHECKOUT_URL; }, 1200);
+
+  setTimeout(()=>{
+    registrationForm.style.display = "none";
+    registrationSuccess.classList.add("show");
+    document.querySelector(".registration-card")?.scrollTo({top:0,behavior:"smooth"});
+  }, 1200);
 });
 
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.12});
