@@ -261,6 +261,29 @@ footer .footer-bottom{
   .portrait-bruna img{transform:scale(1.38);object-position:center top}
 }
 
+
+/* ===== INSCRIÇÃO PROFISSIONAL DHOBRU ===== */
+.modal{overflow-y:auto}
+.modal-card.registration-card{width:min(780px,100%);max-width:780px;max-height:min(90vh,860px);overflow-y:auto;padding:0;border-radius:26px;position:relative;background:#fbfaf6;border:1px solid rgba(199,164,99,.28)}
+.reg-head{padding:30px 34px 24px;background:linear-gradient(145deg,#071323,#0d2743);color:#fff;position:relative}
+.reg-head .eyebrow{color:#e0c184;margin-bottom:8px}.reg-head h3{font-family:"Manrope";font-size:30px;margin:0 42px 8px 0}.reg-head p{color:#b9c6d4;margin:0;font-size:14px;max-width:610px}
+.reg-close{position:absolute;right:18px;top:18px;width:38px!important;height:38px;padding:0!important;border:1px solid rgba(255,255,255,.18);border-radius:50%;background:rgba(255,255,255,.07);color:#fff;font-size:22px;cursor:pointer}
+.reg-form{padding:28px 34px 32px}.reg-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+.field label,.choice-title{font-size:12px;font-weight:900;letter-spacing:.04em;color:#27394c}
+.field input{width:100%;height:48px;border:1px solid #d8d7d0;border-radius:12px;background:#fff;color:#102033;padding:0 14px;font:inherit;font-size:14px;outline:none;transition:.2s}
+.field input:focus{border-color:#c7a463;box-shadow:0 0 0 3px rgba(199,164,99,.12)}
+.choice-block{grid-column:1/-1;margin-top:4px}.choice-title{display:block;margin-bottom:10px}.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.payment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.choice-card{position:relative}.choice-card input{position:absolute;opacity:0;pointer-events:none}
+.choice-card label{min-height:48px;display:flex;align-items:center;padding:11px 13px;border-radius:12px;border:1px solid #d8d7d0;background:#fff;color:#42505e;font-size:12px;font-weight:700;cursor:pointer;transition:.18s}
+.choice-card label:before{content:"";width:10px;height:10px;border-radius:50%;margin-right:9px;border:2px solid #b9a16b;box-shadow:0 0 0 3px rgba(199,164,99,.08)}
+.choice-card input:checked + label{border-color:#b58d49;background:#f5edda;color:#102033;box-shadow:0 0 0 2px rgba(199,164,99,.10)}
+.choice-card input:checked + label:before{background:#a77b32;border-color:#a77b32}
+.reg-consent{grid-column:1/-1;display:flex;gap:9px;align-items:flex-start;margin-top:4px;font-size:11px;color:#69737d;line-height:1.45}.reg-consent input{margin-top:3px;accent-color:#a77b32}
+.reg-submit{grid-column:1/-1;width:100%!important;margin-top:4px;padding:17px 22px!important}.reg-submit[disabled]{opacity:.65;cursor:wait;transform:none!important}
+.reg-foot{grid-column:1/-1;text-align:center;font-size:10px;color:#7b858f;margin-top:-3px}
+.reg-status{display:none;grid-column:1/-1;padding:12px 14px;border-radius:11px;background:#eef0d5;color:#4d5912;font-size:12px;font-weight:800;text-align:center}.reg-status.show{display:block}
+@media(max-width:620px){.modal{align-items:flex-start;padding:10px}.modal-card.registration-card{max-height:calc(100vh - 20px);border-radius:20px}.reg-head{padding:25px 20px 20px}.reg-head h3{font-size:25px}.reg-form{padding:20px}.reg-grid{grid-template-columns:1fr}.field.full,.choice-block,.reg-consent,.reg-submit,.reg-foot,.reg-status{grid-column:1}.choice-grid,.payment-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -350,20 +373,99 @@ footer .footer-bottom{
     <div><span class="tick">✓</span> Hotel Estação 101 · Itajaí/SC</div>
   </div>
   <button class="btn btn-gold checkout">Garantir minha vaga por R$ 197</button>
-  <div class="secure-note">Pagamento direcionado ao Mercado Pago</div>
+  <div class="secure-note">Preencha seus dados e siga para o pagamento seguro</div>
 </div>
 </div></section>
-<section class="faq"><div class="container"><div class="eyebrow">Dúvidas frequentes</div><h2>Antes de decidir.</h2><div class="faq-list"><details><summary>Preciso entender de programação?</summary><p>Não. O workshop é voltado à aplicação prática da Inteligência Artificial na rotina de RH e não exige conhecimento de programação.</p></details><details><summary>O workshop é presencial?</summary><p>Sim. O encontro será presencial no Hotel Estação 101, em Itajaí/SC, das 08h30 às 12h.</p></details><details><summary>O que está incluso no valor?</summary><p>Participação no workshop, café da manhã, apostila digital e certificado de participação.</p></details><details><summary>É só para quem já usa IA?</summary><p>Não. O conteúdo foi estruturado para profissionais que querem entender possibilidades e aplicações reais, incluindo quem ainda está começando.</p></details><details><summary>Como faço a inscrição?</summary><p>Clique em “Garantir minha vaga” para seguir ao pagamento seguro pelo Mercado Pago. Após a confirmação, finalize os dados do participante conforme as orientações da inscrição.</p></details></div></div></section>
+<section class="faq"><div class="container"><div class="eyebrow">Dúvidas frequentes</div><h2>Antes de decidir.</h2><div class="faq-list"><details><summary>Preciso entender de programação?</summary><p>Não. O workshop é voltado à aplicação prática da Inteligência Artificial na rotina de RH e não exige conhecimento de programação.</p></details><details><summary>O workshop é presencial?</summary><p>Sim. O encontro será presencial no Hotel Estação 101, em Itajaí/SC, das 08h30 às 12h.</p></details><details><summary>O que está incluso no valor?</summary><p>Participação no workshop, café da manhã, apostila digital e certificado de participação.</p></details><details><summary>É só para quem já usa IA?</summary><p>Não. O conteúdo foi estruturado para profissionais que querem entender possibilidades e aplicações reais, incluindo quem ainda está começando.</p></details><details><summary>Como faço a inscrição?</summary><p>Clique em “Garantir minha vaga”, preencha seus dados de inscrição no próprio site e, em seguida, você será direcionado ao pagamento seguro pelo Mercado Pago.</p></details></div></div></section>
 <section class="final"><div class="container"><h2>O RH não precisa trabalhar mais.<br>Precisa trabalhar com mais inteligência.</h2><p>Conheça aplicações reais de IA e comece a transformar tarefas, processos e decisões em uma rotina mais estratégica.</p><button class="btn btn-dark checkout">Quero participar do Workshop</button></div></section>
 
 <footer><div class="container footer-bottom"><span>© 2026 DHOBRU · Pessoas, Negócios & Inteligência Artificial</span></div>
 </footer>
-<div class="modal" id="modal"><div class="modal-card"><h3>Inscrição</h3><p>Use o botão “Garantir minha vaga” para acessar o pagamento.</p><button class="btn btn-dark" id="closeModal">Fechar</button></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="regTitle">
+  <div class="modal-card registration-card">
+    <div class="reg-head">
+      <button type="button" class="reg-close" id="closeModal" aria-label="Fechar">×</button>
+      <div class="eyebrow">Inscrição · Workshop IA no RH</div>
+      <h3 id="regTitle">Garanta sua vaga</h3>
+      <p>Preencha seus dados para registrar sua inscrição. Ao finalizar, você será direcionado ao pagamento seguro pelo Mercado Pago.</p>
+    </div>
+    <form class="reg-form" id="registrationForm" action="https://script.google.com/macros/s/AKfycbxEs4fvNJvv7c9whTLjFoAX91q427kBFVB4BDRtImW7iSk6eRKKjqzeXfTgqSxIFPleAQ/exec" method="POST" target="registrationSink">
+      <div class="reg-grid">
+        <div class="field full"><label for="nome">Nome completo *</label><input id="nome" name="nome" type="text" autocomplete="name" required placeholder="Como deseja que seu nome apareça"></div>
+        <div class="field"><label for="whatsapp">WhatsApp com DDD *</label><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(47) 99999-9999"></div>
+        <div class="field"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="seuemail@empresa.com"></div>
+        <div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="empresa" type="text" autocomplete="organization" required placeholder="Empresa em que trabalha"></div>
+        <div class="field"><label for="cargo">Cargo / função *</label><input id="cargo" name="cargo" type="text" autocomplete="organization-title" required placeholder="Ex.: Analista de RH"></div>
+
+        <div class="choice-block">
+          <span class="choice-title">Qual é seu principal interesse hoje em IA aplicada ao RH? *</span>
+          <div class="choice-grid">
+            <div class="choice-card"><input required type="radio" name="interesse" id="int1" value="Automatizar processos e reduzir atividades manuais"><label for="int1">Automatizar processos e reduzir atividades manuais</label></div>
+            <div class="choice-card"><input type="radio" name="interesse" id="int2" value="Recrutamento e seleção com IA"><label for="int2">Recrutamento e seleção com IA</label></div>
+            <div class="choice-card"><input type="radio" name="interesse" id="int3" value="Análise de dados, indicadores e People Analytics"><label for="int3">Análise de dados e indicadores</label></div>
+            <div class="choice-card"><input type="radio" name="interesse" id="int4" value="Cargos, salários e avaliação de desempenho"><label for="int4">Cargos, salários e desempenho</label></div>
+            <div class="choice-card"><input type="radio" name="interesse" id="int5" value="Comunicação, conteúdo e apoio à rotina de RH"><label for="int5">Comunicação e apoio à rotina de RH</label></div>
+            <div class="choice-card"><input type="radio" name="interesse" id="int6" value="Quero conhecer diferentes possibilidades de IA no RH"><label for="int6">Conhecer diferentes possibilidades</label></div>
+          </div>
+        </div>
+
+        <div class="choice-block">
+          <span class="choice-title">Como prefere realizar o pagamento? *</span>
+          <div class="payment-grid">
+            <div class="choice-card"><input required type="radio" name="pagamento" id="pay1" value="PIX"><label for="pay1">PIX</label></div>
+            <div class="choice-card"><input type="radio" name="pagamento" id="pay2" value="Cartão de crédito"><label for="pay2">Cartão de crédito</label></div>
+            <div class="choice-card"><input type="radio" name="pagamento" id="pay3" value="Escolher no Mercado Pago"><label for="pay3">Escolher no Mercado Pago</label></div>
+          </div>
+        </div>
+
+        <label class="reg-consent"><input type="checkbox" required><span>Confirmo que os dados acima estão corretos e concordo em receber informações relacionadas ao Workshop IA no RH.</span></label>
+        <div class="reg-status" id="regStatus">Inscrição registrada. Abrindo o pagamento…</div>
+        <button class="btn btn-gold reg-submit" id="regSubmit" type="submit">Continuar para o pagamento →</button>
+        <div class="reg-foot">Seus dados serão utilizados para gestão da inscrição e comunicação relacionada ao workshop.</div>
+      </div>
+    </form>
+    <iframe name="registrationSink" id="registrationSink" title="Envio da inscrição" style="display:none"></iframe>
+  </div>
+</div>
 <script>
 const CHECKOUT_URL = "https://mpago.la/1mrDcHG";
-document.querySelectorAll(".checkout").forEach(btn=>btn.addEventListener("click",()=>{if(CHECKOUT_URL) location.href=CHECKOUT_URL; else document.getElementById("modal").classList.add("show");}));
-document.getElementById("closeModal").onclick=()=>document.getElementById("modal").classList.remove("show");
-document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")e.currentTarget.classList.remove("show")});
+const REGISTRATION_URL = "https://script.google.com/macros/s/AKfycbxEs4fvNJvv7c9whTLjFoAX91q427kBFVB4BDRtImW7iSk6eRKKjqzeXfTgqSxIFPleAQ/exec";
+const modal = document.getElementById("modal");
+const registrationForm = document.getElementById("registrationForm");
+const regSubmit = document.getElementById("regSubmit");
+const regStatus = document.getElementById("regStatus");
+
+function openRegistration(){
+  modal.classList.add("show");
+  document.body.style.overflow = "hidden";
+  setTimeout(()=>document.getElementById("nome")?.focus(),120);
+}
+function closeRegistration(){
+  modal.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".checkout").forEach(btn=>btn.addEventListener("click",openRegistration));
+document.getElementById("closeModal").addEventListener("click",closeRegistration);
+modal.addEventListener("click",e=>{if(e.target===modal) closeRegistration();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape" && modal.classList.contains("show")) closeRegistration();});
+
+document.getElementById("whatsapp").addEventListener("input",e=>{
+  let v=e.target.value.replace(/\D/g,"").slice(0,11);
+  if(v.length>10) v=v.replace(/(\d{2})(\d{5})(\d{0,4})/,"($1) $2-$3");
+  else if(v.length>6) v=v.replace(/(\d{2})(\d{4})(\d{0,4})/,"($1) $2-$3");
+  else if(v.length>2) v=v.replace(/(\d{2})(\d+)/,"($1) $2");
+  e.target.value=v;
+});
+
+registrationForm.addEventListener("submit",e=>{
+  if(!registrationForm.checkValidity()) return;
+  regSubmit.disabled = true;
+  regSubmit.textContent = "Registrando inscrição…";
+  regStatus.classList.add("show");
+  setTimeout(()=>{ window.location.href = CHECKOUT_URL; }, 1200);
+});
+
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 </script>
